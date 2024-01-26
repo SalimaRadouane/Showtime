@@ -1,0 +1,36 @@
+.navbar-brand
+{
+    color: #E50914;
+    font-weight: bold;
+   font-size: 20px;
+   text-align: center;
+}
+button
+{
+    background-color: #E50914;
+    color: #ffffff;
+}
+
+button:hover
+{
+    background-color: #E50914;
+    color: #ffffff;
+}
+
+img{
+    width: 100%;
+    cursor: pointer;
+}
+.text{
+    color: #E50914;
+}
+h5
+{
+    color: #ffffff;
+}
+.btn-link {
+    color: black;
+}
+.btn:hover {
+    color: #E50914;
+}

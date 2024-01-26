@@ -1,0 +1,39 @@
+<!-- app-login.component.html -->
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="text">SHOWTIME</h1>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="navbar-brand">LOGIN</h3>
+                </div>
+                <div class="card-body">
+                    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                        <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
+                            {{ errorMessage }}
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your username" formControlName="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" formControlName="password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-md" >Login</button>
+                        <!-- Lien pour rediriger vers la page d'inscription -->
+                        <a routerLink="registration" class="btn btn-link">Don't have an account? Register here</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
